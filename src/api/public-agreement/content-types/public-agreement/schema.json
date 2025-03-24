@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "public_agreements",
+  "info": {
+    "singularName": "public-agreement",
+    "pluralName": "public-agreements",
+    "displayName": "Публічний договір",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "textArray": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ui.text-array"
+    }
+  }
+}

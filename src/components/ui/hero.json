@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_ui_heroes",
+  "info": {
+    "displayName": "Hero",
+    "icon": "picture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "secondaryDescription": {
+      "type": "string"
+    }
+  }
+}

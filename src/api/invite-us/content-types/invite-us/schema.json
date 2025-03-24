@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "invite_uses",
+  "info": {
+    "singularName": "invite-us",
+    "pluralName": "invite-uses",
+    "displayName": "Запроси нас",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "examples": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.example",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ui.hero"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ui.button"
+    }
+  }
+}

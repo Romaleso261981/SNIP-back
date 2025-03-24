@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_ui_text_arrays",
+  "info": {
+    "displayName": "TextArray"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  }
+}

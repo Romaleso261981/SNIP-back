@@ -16,16 +16,54 @@
     }
   },
   "attributes": {
-    "title": {
-      "type": "string",
+    "about": {
+      "type": "component",
+      "repeatable": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "ui.text-section"
     },
-    "text": {
-      "type": "text",
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ui.button"
+    },
+    "gallery": {
+      "displayName": "Gallery",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ui.gallery"
+    },
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true

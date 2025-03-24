@@ -1,0 +1,22 @@
+version: '3.8'
+
+networks:
+  strapi-network:
+    driver: bridge
+
+services:
+  strapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: strapi
+    environment:
+      DATABASE_CLIENT: sqlite
+      DATABASE_FILENAME: /data/db.sqlite
+    volumes:
+      - ./data:/data
+    networks:
+      - strapi-network
+    ports:
+      - "1337:1337"
+    command: ["npm", "run", "start"]
